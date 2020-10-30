@@ -1,0 +1,18 @@
+title: Regelungstechnik Praktikum
+description: >-
+  hier sollen die latex dateien und die Matlab datein f[r das Praktikum
+  abgespeichert werden
+template:
+  repo: regelungstechnik-praktikum-template
+  name: regelungstechnik-praktikum
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
